@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:3001
+
+POST {{baseUrl}}/api/notes 
+Content-Type: application/json
+
+{
+    "content": "Esto es una nueva nota",
+    "important": true
+}
+
+### Sin content
+
+POST {{baseUrl}}/api/notes 
+Content-Type: application/json
+
+{
+    "important": true
+}
